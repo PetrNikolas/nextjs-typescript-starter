@@ -1,0 +1,5 @@
+.Home:before {
+	content: "Global style";
+    font-size: smaller;
+	opacity: 0.5;
+}
