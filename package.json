@@ -1,6 +1,6 @@
 {
   "name": "nextjs-typescript-starter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Petr Nikolas Prokop <hello@petrnikolas.com>",
   "license": "MIT",
   "private": true,
@@ -28,7 +28,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn ci"
+      "pre-commit": "yarn ci",
+      "pre-push": "yarn test"
     }
   },
   "dependencies": {

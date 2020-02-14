@@ -3,6 +3,7 @@ import { NextPage, NextPageContext } from 'next';
 import { NextSeo } from 'next-seo';
 
 import Home from '../components/Home';
+import Layout from '../components/Layout';
 
 const IndexPage: React.FC<{}> & NextPage<{}> = () => (
 	<>
@@ -10,7 +11,9 @@ const IndexPage: React.FC<{}> & NextPage<{}> = () => (
 			title="Home"
 			description=""
 		/>
-		<Home/>
+		<Layout>
+			<Home/>
+		</Layout>
 	</>
 );
 
