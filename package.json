@@ -1,8 +1,9 @@
 {
   "name": "nextjs-typescript-starter",
-  "version": "0.0.1",
-  "author": "petr nikolas prokop",
+  "version": "0.0.2",
+  "author": "Petr Nikolas Prokop <hello@petrnikolas.com>",
   "license": "MIT",
+  "private": true,
   "engines": {
     "node": ">=12.0.0"
   },
@@ -12,9 +13,12 @@
     "build": "next build ./src",
     "build:analyze": "cross-env ANALYZE=true yarpm run build",
     "build:maxify": "cross-env ANALYZE=true MINIFY=false yarpm run build",
+    "export": "next export ./src",
     "start": "next start ./src",
     "test": "jest",
+    "coverage": "jest --coverage",
     "check": "tsc --noEmit",
+    "watch": "jest --watch",
     "lint": "eslint --ext .ts,.tsx ./src",
     "lint:all": "cross-env DEBUG=eslint:cli-engine eslint --ext .js,.jsx,.ts,.tsx --ignore-pattern '!.eslintrc.js' .",
     "lint-config": "eslint --print-config .eslintrc.js",

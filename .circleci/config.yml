@@ -13,8 +13,8 @@ jobs:
       - restore_cache:
           key: v1-npm-deps-{{ checksum "package.json" }}
       - run: yarn
-      - run: yarn format:all
-      - run: yarn yarn lint:all
+      - run: yarn check
+      - run: yarn coverage
       - save_cache:
           key: v1-npm-deps-{{ checksum "package.json" }}
           paths:
