@@ -28,3 +28,33 @@ A React/Next.js/TypeScript starter project.
 
 - `yarn build`
 - `yarn start`
+
+### :rocket: Test
+
+```bash
+yarn test # test
+yarn test:watch
+yarn test:coverage # report coverage
+```
+
+### Build static HTML
+
+```bash
+yarn
+yarn build # create .next directory
+yarn export # create .out directory
+```
+
+## Configuration
+
+Set SEO & analytics variables
+
+> src/constants/env.ts
+
+```typescript
+// for meta tag <og & twitter>
+export const SITE_NAME = ''
+export const SITE_TITLE = ''
+export const SITE_DESCRIPTION = ''
+export const SITE_IMAGE = ''
+```
