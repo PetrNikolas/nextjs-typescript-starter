@@ -17,7 +17,6 @@ A React/Next.js/TypeScript starter project.
 
 ### Installation
 
-- `git clone`
 - `yarn install`
 
 ### Running in development
