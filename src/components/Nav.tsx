@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const Nav: React.FC = () => (
 	<nav>
 		<h4>
-            Nav
+			Nav
 		</h4>
 		<ul>
 			<li>

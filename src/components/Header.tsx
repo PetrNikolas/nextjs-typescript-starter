@@ -4,7 +4,7 @@ import Nav from './Nav';
 export const Header: React.FC = () => (
 	<div>
 		<h1>
-            Header
+			Header
 		</h1>
 		<Nav/>
 	</div>

@@ -26,9 +26,15 @@
     "format:all": "cross-env DEBUG=eslint:cli-engine eslint --fix --ext .js,.jsx,.ts,.tsx --ignore-pattern '!.eslintrc.js' .",
     "ci": "yarn format:all && yarn lint:all"
   },
+  "lint-staged": {
+    "src/**/*.{.js,.jsx,.ts,.tsx}": [
+      "yarn format:all && yarn lint:all",
+      "git add"
+    ]
+  },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn ci",
+      "pre-commit": "lint-staged",
       "pre-push": "yarn test"
     }
   },
@@ -67,6 +73,7 @@
     "husky": "^4.2.3",
     "jest": "^24.8.0",
     "less": "^3.9.0",
+    "lint-staged": "^10.2.10",
     "next-compose-plugins": "^2.2.0",
     "next-images": "^1.1.2",
     "next-progressbar": "^1.0.0",
